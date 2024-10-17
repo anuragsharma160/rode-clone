@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rode Clone</title>
+    <link rel="stylesheet" href="./main.css" />
+    <!--Inter font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+  <body>
+    <header
+      class="fixed inset-0 z-[1000] bg-mylight h-fit md:pb-8"
+    >
+      <!-- top banner -->
+      <section>
+        <div
+          class="max-w-[1280px] mx-auto flex flex-row justify-between items-center"
+        >
+          <div
+            class="flex flex-row items-center group cursor-pointer"
+          >
+            <svg
+              width="13"
+              height="18"
+              viewBox="0 0 13 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:cursor-pointer"
+            >
+              <path
+                d="M6.49992 0.557373C3.20963 0.557373 0.537109 3.22533 0.537109 6.49236C0.537109 11.0063 6.49992 17.4359 6.49992 17.4359C6.49992 17.4359 12.4627 11.0063 12.4627 6.49236C12.4627 3.22533 9.79021 0.557373 6.49992 0.557373Z"
+                stroke="#484848"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M6.50048 9.7315C8.28058 9.7315 9.72362 8.23449 9.72362 6.38784C9.72362 4.54119 8.28058 3.04419 6.50048 3.04419C4.72039 3.04419 3.27734 4.54119 3.27734 6.38784C3.27734 8.23449 4.72039 9.7315 6.50048 9.7315Z"
+                stroke="#484848"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <select name="" id="" class="cursor-pointer text-sm">
+              <option value="">English</option>
+              <option value="">Deuutch</option>
+              <option value="">Francais</option>
+              <option value="">Italiano</option>
+              <option value="">Espanol</option>
+            </select>
+          </div>
+          <svg
+            width="16"
+            height="20"
+            viewBox="0 0 16 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="cursor-pointer"
+          >
+            <path
+              d="M12.4023 5.21899C12.4023 2.88051 10.4828 1 8.07994 1C5.67702 1 3.76465 2.88051 3.76465 5.21899C3.76465 7.52973 5.68413 9.41023 8.08704 9.41023C10.49 9.41023 12.4023 7.52973 12.4023 5.21899Z"
+              stroke="#484848"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M1.14071 16.488C0.643067 17.6746 1.52461 19 2.85403 19H13.3117C14.6411 19 15.5226 17.6746 15.025 16.488C13.724 13.4626 11.1007 11.4155 8.0793 11.4155C5.04367 11.4155 2.41326 13.4626 1.14071 16.488Z"
+              stroke="#484848"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <hr class="h-0.5 bg-gray-300 mt-1" />
+
+      <!-- Navbar -->
+      <nav class="mt-4 md:mt-8">
+        <div
+          class="max-w-[1280px] mx-auto flex flex-col space-y-4 lg:space-y-0 lg:flex lg:flex-row justify-between"
+        >
+          <!-- RODE LOGO -->
+          <a href="">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 792.9 220.2"
+              xml:space="preserve"
+              style="height: 24px"
+              class="cursor-pointer hover:opacity-70"
+            >
+              <g>
+                <path
+                  d="M179.8,69.2c0-39.4-38.8-63.6-74.9-63.6H0v208.7h62.8V113.4l48.4,99.2l0.8,1.5h71.3l-49.8-87.8
+            C162.2,118.2,179.8,96.5,179.8,69.2z M62.8,35.8h18.4c20,0,34,14.2,34,34.4c0,29.2-16.7,35-45.7,35h-6.9V35.8H62.8z"
+                ></path>
+                <polygon
+                  points="717,181.1 717,123.8 785.4,123.8 785.4,90.5 717,90.5 717,39 789,39 789,5.6 654.3,5.6 654.3,214.3 792.9,214.3 
+            792.9,181.1 	"
+                ></polygon>
+                <path
+                  d="M525.4,5.6H433v208.7h101.9c62.5,0,102.8-39.4,102.8-100.5C637.4,51.1,590.3,5.6,525.4,5.6z M572.6,105.5
+            c0,38.8-15.4,80.1-58.8,80.1h-20.9V34.2h18.8C553.8,34.2,572.6,70,572.6,105.5z"
+                ></path>
+                <path
+                  d="M410.8,19.6L393.3,2.1l-21.5,21.5C353,8.9,328.8,0,302.3,0C240,0,191.4,48.3,191.4,110c0,26.7,9.2,50.9,24.6,69.8
+            l-21.1,21.1l17.5,17.5l21.3-21.3c18.8,14.4,42.5,23.1,68.6,23.1c62.3,0,110.9-48.2,110.9-109.9c0-26.3-8.8-50.2-23.8-68.8
+            L410.8,19.6z M302.4,27.3c19.4,0,30.7,12.7,37.3,28.6l-81.5,81.5c-1.5-10.4-1.9-20.4-1.9-27.5C256.3,85.2,260.9,27.3,302.4,27.3z
+             M346.6,83.8c1.3,10,1.7,19.2,1.7,26.1c0,24.8-4.4,82.6-46.1,82.6c-19,0-30.2-12.1-36.9-27.7L346.6,83.8z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <!-- nav-list -->
+          <ul
+            class="flex flex-col space-y-4 md:space-y-0 md:flex md:flex-row md:space-x-10"
+          >
+            <a href="" class="group w-fit">
+              <li class="font-inter text-black group-hover:text-gray-500">
+                Products
+              </li>
+            </a>
+            <a href="" class="group w-fit">
+              <li class="font-inter text-black group-hover:text-gray-500">
+                Solutions
+              </li>
+            </a>
+            <a href="" class="group w-fit">
+              <li class="font-inter text-black group-hover:text-gray-500">
+                Apps
+              </li>
+            </a>
+            <a href="" class="group w-fit">
+              <li class="font-inter text-black group-hover:text-gray-500">
+                User Guides
+              </li>
+            </a>
+            <a href="" class="group w-fit">
+              <li class="font-inter text-black group-hover:text-gray-500">
+                Support
+              </li>
+            </a>
+          </ul>
+          <!-- Search Icon -->
+          <svg
+            data-v-9b7247d4=""
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="cursor-pointer"
+          >
+            <circle
+              cx="8.80261"
+              cy="8.80261"
+              r="7.80261"
+              stroke="#484848"
+              stroke-width="2"
+            ></circle>
+            <path
+              d="M20.6449 22.0599C21.0355 22.4504 21.6686 22.4504 22.0592 22.0599C22.4497 21.6694 22.4497 21.0362 22.0592 20.6457L20.6449 22.0599ZM15.5429 16.9578L20.6449 22.0599L22.0592 20.6457L16.9571 15.5436L15.5429 16.9578Z"
+              fill="black"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- section-1 -->
+      <section class="mt-96 md:mt-28 bg-black">
+        <div
+          class="bg-[url(rode-assets/section-1-image.jpg)] bg-center bg-no-repeat h-[700px] relative hidden lg:block"
+        >
+          <div
+            class="h-full mr-36 w-1/2 absolute right-0 flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/Video_text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-10"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Video Production, Evolved
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[600px] mx-auto opacity-70"
+            >
+              A revolutionary all-in-one video and audio production console that
+              combines powerful video switching, recording and production
+              capabilities with a fully integrated professional audio mixer.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-14 inline-block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-black hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/section-1-image-mobile-view.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/Video_text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-10"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Video Production, Evolved
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[600px] mx-auto opacity-70"
+            >
+              A revolutionary all-in-one video and audio production console that
+              combines powerful video switching, recording and production
+              capabilities with a fully integrated professional audio mixer.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-14 inline-block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-black hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-2 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets/section-2-person-image.jpg)] bg-cover bg-center bg-no-repeat h-[700px] hidden lg:block"
+        >
+          <div
+            class="w-1/2 h-full flex flex-col ml-16"
+          >
+            <img
+              src="rode-assets/creator-text-section-2-image.svg"
+              alt=""
+              class="mx-auto mt-28"
+              width="600"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Calling All Creators!
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The RØDE Creator of the Year Awards celebrate the next generation
+              of content creators, sharing their work with the world and giving
+              them the chance to win a share in US$250,000 cash and over
+              US$100,000 in prizes.
+            </p>
+            <a
+              href=""
+              class="border border-transparent font-inter text-black mt-14 block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>LEARN MORE</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden bg-black pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/section-2-image-mobile-view.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div class="h-full flex flex-col">
+            <img
+              src="rode-assets/creator-text-section-2-image.svg"
+              alt=""
+              class="mx-auto mt-28"
+              width="600"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Calling All Creators!
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The RØDE Creator of the Year Awards celebrate the next generation
+              of content creators, sharing their work with the world and giving
+              them the chance to win a share in US$250,000 cash and over
+              US$100,000 in prizes.
+            </p>
+            <a
+              href=""
+              class="border border-transparent font-inter text-black mt-14 block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>LEARN MORE</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-3 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets/section-3-bg-image.jpg)] bg-center bg-no-repeat h-[700px] relative hidden lg:block"
+        >
+          <div
+            class="h-full mr-16 w-1/2 absolute right-0 flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/RODECasterProII_PL_P_01-text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-10"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Meet the White Collection
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              Say hello to the White Collection featuring the RØDECaster Duo,
+              PodMic, NTH-100, and now the RØDECaster Pro II.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-14 inline-block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/section-3-bg-image-mobile-view.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/RODECasterProII_PL_P_01-text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-10"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Meet the White Collection
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              Say hello to the White Collection featuring the RØDECaster Duo,
+              PodMic, NTH-100, and now the RØDECaster Pro II.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-14 inline-block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-4 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets/singing-man-image-section-4.jpg)] bg-cover bg-center bg-no-repeat h-[750px] hidden lg:block"
+        >
+          <div
+            class="w-1/2 h-full flex flex-col ml-16 place-content-center"
+          >
+            <img
+              src="rode-assets/NT1SS_signature-image.svg"
+              alt=""
+              class="mx-auto"
+              width="600"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Your New Go-to Studio Mic
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The NT1 Signature Series is a workhorse studio condenser
+              microphone with a warm, silky character, exceptionally low noise
+              and high SPL handling – ideal in a wide range of studio
+              applications.
+            </p>
+            <a
+              href=""
+              class="border border-transparent font-inter text-white mt-14 block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/singing-man-image-mobile-view.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/NT1SS_signature-image.svg"
+              alt=""
+              class="mx-auto mt-5"
+              width="600"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Your New Go-to Studio Mic
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The NT1 Signature Series is a workhorse studio condenser
+              microphone with a warm, silky character, exceptionally low noise
+              and high SPL handling – ideal in a wide range of studio
+              applications.
+            </p>
+            <a
+              href=""
+              class="border border-transparent font-inter text-white mt-14 block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-5 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets/hand-mike-image.jpg)] bg-center bg-no-repeat h-[700px] relative hidden lg:block"
+        >
+          <div
+            class="h-full mr-16 w-1/2 absolute right-0 flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets\INTERVIEWPRO_PL_P_01.svg"
+              alt=""
+              width="600"
+              class="mx-auto"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Pristine Wireless Audio in Your Hands
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[570px] mx-auto opacity-70"
+            >
+              The Interview PRO is a broadcast-quality handheld wireless
+              microphone with 32-bit float on-board recording and intelligent
+              GainAssist technology – ideal for capturing professional audio in
+              a wide range of content creation, media and broadcast
+              applications.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-12 inline-block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/hand-mike-image-mobile-view.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets\INTERVIEWPRO_PL_P_01.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-4"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              Pristine Wireless Audio in Your Hands
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[570px] mx-auto opacity-70"
+            >
+              The Interview PRO is a broadcast-quality handheld wireless
+              microphone with 32-bit float on-board recording and intelligent
+              GainAssist technology – ideal for capturing professional audio in
+              a wide range of content creation, media and broadcast
+              applications.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-12 inline-block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-6 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets\rode-podmic-usb-banner-5910x2155-rgb-1920x700-8c89d38.jpg)] bg-cover bg-center bg-no-repeat h-[700px] hidden lg:block"
+        >
+          <div
+            class="w-1/2 h-full flex flex-col ml-16 place-content-center"
+          >
+            <img
+              src="rode-assets/PODMIC USB_PL_PI_02-text-image.svg"
+              alt=""
+              class="mx-auto"
+              width="600"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Introducing the PodMic USB in White
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The PodMic USB is an ultra-versatile dynamic microphone with both
+              an XLR and USB output, ideal for podcasting, streaming, gaming,
+              and other speech applications for content creation. Now available
+              in white.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-14 block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden bg-black pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/rode-podmic-usb-banner-mobile-view-image.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets/PODMIC USB_PL_PI_02-text-image.svg"
+              alt=""
+              class="mx-auto mt-5"
+              width="600"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Introducing the PodMic USB in White
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The PodMic USB is an ultra-versatile dynamic microphone with both
+              an XLR and USB output, ideal for podcasting, streaming, gaming,
+              and other speech applications for content creation. Now available
+              in white.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-14 block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-7 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets/Podcasting-Range-image.jpg)] bg-center bg-no-repeat h-[700px] relative hidden lg:block"
+        >
+          <div
+            class="h-full mr-16 w-1/2 absolute right-0 flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets\THE PODCASTING RANGE-white-text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Your Podcast Starts Here
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              Our industry-leading range of podcasting equipment offers
+              everything you need to record a podcast start-to-finish, from
+              microphones, studio arms and headphones to complete, all-in-one
+              production studios.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-12 inline-block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>EXPLORE THE RANGE</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden bg-black pb-5">
+          <!-- top part -->
+          <img
+            src="rode-assets/Podcast-Homepage-mobile-view-image.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets\THE PODCASTING RANGE-white-text-image.svg"
+              alt=""
+              width="600"
+              class="mx-auto mt-5"
+            />
+            <h4
+              class="font-inter text-white mt-8 text-center text-2xl font-medium"
+            >
+              Your Podcast Starts Here
+            </h4>
+            <p
+              class="font-inter text-white mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              Our industry-leading range of podcasting equipment offers
+              everything you need to record a podcast start-to-finish, from
+              microphones, studio arms and headphones to complete, all-in-one
+              production studios.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-black mt-12 inline-block mx-auto bg-white rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-white hover:border-2 hover:border-white transition-all duration-400 ease-linear"
+            >
+              <button>EXPLORE THE RANGE</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-8 -->
+      <section>
+        <div
+          class="bg-[url(rode-assets\Wireless-Pro-image.jpg)] bg-center bg-no-repeat h-[700px] hidden lg:block"
+        >
+          <div
+            class="w-1/2 h-full flex flex-col ml-16 place-content-center"
+          >
+            <img
+              src="rode-assets\WIGO PRO PL P 01-text-image.svg"
+              alt=""
+              class="mx-auto"
+              width="600"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              The Most Powerful Wireless Mic Ever
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The Wireless PRO is the ultimate wireless solution, packed full of
+              powerful features like 32-bit float, timecode and GainAssist that
+              offer incredible flexibility for recording pristine audio for your
+              content.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-14 block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+        <!-- mobile view -->
+        <div class="lg:hidden pb-5">
+          <!-- top view -->
+          <img
+            src="rode-assets/Wipro-Banner-mobile-view-image.jpg"
+            alt=""
+            class="w-full"
+          />
+          <!-- bottom part -->
+          <div
+            class="h-full flex flex-col place-content-center"
+          >
+            <img
+              src="rode-assets\WIGO PRO PL P 01-text-image.svg"
+              alt=""
+              class="mx-auto mt-5"
+              width="600"
+            />
+            <h4
+              class="font-inter text-black mt-8 text-center text-2xl font-medium"
+            >
+              The Most Powerful Wireless Mic Ever
+            </h4>
+            <p
+              class="font-inter text-black mt-5 text-center max-w-[580px] mx-auto opacity-70"
+            >
+              The Wireless PRO is the ultimate wireless solution, packed full of
+              powerful features like 32-bit float, timecode and GainAssist that
+              offer incredible flexibility for recording pristine audio for your
+              content.
+            </p>
+            <a
+              href=""
+              class="border-2 border-transparent font-inter text-white mt-14 block mx-auto bg-black rounded-full px-14 py-4 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>SHOP NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- different- section-9 -->
+      <section class="bg-mylight pb-14">
+        <a href="">
+          <h1
+            class="font-inter text-center underline text-4xl font-medium bg-white py-6"
+          >
+            Latest From The RØDE Blog
+          </h1>
+        </a>
+        <div class="max-w-[1280px] mx-auto mt-12">
+          <!-- Cards -->
+          <div
+            class="grid grid-cols-1 md:grid md:grid-cols-2 gap-8"
+          >
+            <!-- Card-1 -->
+            <div class="bg-white">
+              <h1 class="font-inter text-3xl text-center">
+                Introducing the RØDECaster Video All-in-One Production Console
+              </h1>
+              <div class="">
+                <img
+                  src="rode-assets/production-console-image.jpg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <p
+                class="mt-10 font-inter text-center max-w-[540px] mx-auto"
+              >
+                The RØDECaster Video is a revolutionary all-in-one video and
+                audio production console that provides intuitive control over
+                every element of your content.
+              </p>
+              <a
+                href=""
+                class="w-fit mb-8 border-2 border-transparent font-inter text-white mt-14 bg-black rounded-full px-7 py-2 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear mx-auto block"
+              >
+                <button>LEARN MORE</button>
+              </a>
+            </div>
+            <!-- Card-2 -->
+            <div class="bg-white">
+              <h1 class="font-inter text-3xl text-center">
+                Introducing the RØDE Creator of the Year Awards
+              </h1>
+              <div class="">
+                <img
+                  src="rode-assets/creator-of-the-year-awards-image.jpg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <p
+                class="mt-10 font-inter text-center max-w-[540px] mx-auto"
+              >
+                The RØDE Creator of the Year Awards celebrates the next
+                generation of content creators, with US$250,000 in cash to be
+                won.
+              </p>
+              <a
+                href=""
+                class="w-fit mb-8 border-2 border-transparent font-inter text-white mt-20 bg-black rounded-full px-7 py-2 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear mx-auto block"
+              >
+                <button>LEARN MORE</button>
+              </a>
+            </div>
+            <!-- Card-3 -->
+            <div class="bg-white">
+              <h1 class="font-inter text-3xl text-center">
+                Introducing the RØDECaster Pro II in White
+              </h1>
+              <div>
+                <img
+                  src="rode-assets/rode-rodecaster-pro-II-white-tree-image.jpg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <p
+                class="mt-10 font-inter text-center max-w-[575px] mx-auto"
+              >
+                The RØDECaster Pro II joins the rest of the RØDE White
+                Collection, including the PodMic, Wireless ME, PSA1+, NTH-100
+                and RØDECaster Duo.
+              </p>
+              <a
+                href=""
+                class="w-fit mb-8 border-2 border-transparent font-inter text-white mt-20 bg-black rounded-full px-7 py-2 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear mx-auto block"
+              >
+                <button>LEARN MORE</button>
+              </a>
+            </div>
+            <!-- Card-4 -->
+            <div class="bg-white">
+              <h1 class="font-inter text-3xl text-center">
+                How to Record a Wireless Podcast
+              </h1>
+              <div>
+                <img
+                  src="rode-assets/how-to-record-wireless-podcast-image.jpg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="mt-10 font-inter text-center max-w-[575px] mx-auto"
+              >
+                In this article, we’ll take a look at how to set up and record a
+                wireless podcast using the RØDECaster Pro II or RØDECaster Duo
+                and our wireless microphone systems.
+              </p>
+              <a
+                href=""
+                class="w-fit mb-8 border-2 border-transparent font-inter text-white mt-14 bg-black rounded-full px-7 py-2 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear mx-auto block"
+              >
+                <button>LEARN MORE</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-[1280px] mx-auto">
+          <h1
+            class="font-inter text-3xl font-bold text-mygray text-center mt-6"
+          >
+            Explore The RØDE Range
+          </h1>
+          <!-- First Link -->
+          <a
+            href=""
+            class="mt-16 bg-[url(rode-assets/microphones-image.png)] h-20 sm:h-40 md:h-80 bg-cover bg-center relative flex items-center"
+          >
+            <div class="w-full">
+              <img
+                src="rode-assets/microphones-text-image.svg"
+                alt=""
+                class=""
+              />
+            </div>
+          </a>
+          <!-- Second Link -->
+          <a
+            href=""
+            class="bg-[url(rode-assets\interfaces-mixers.jpg)] h-20 sm:h-40 md:h-80 bg-cover bg-center relative flex items-center mt-16"
+          >
+            <div class="w-full">
+              <img
+                src="rode-assets/interfaces-text-image.svg"
+                alt=""
+                class=""
+              />
+            </div>
+          </a>
+          <!-- Third Link -->
+          <a
+            href=""
+            class="bg-[url(rode-assets\software-girl-image.png)] h-20 sm:h-40 md:h-80 bg-cover bg-center relative flex items-center mt-16"
+          >
+            <div class="w-full">
+              <img src="rode-assets/software-text-image.svg" alt="" class="" />
+            </div>
+          </a>
+          <!-- Fourth Link -->
+          <a
+            href=""
+            class="bg-[url(rode-assets\accessories.png)] h-20 sm:h-40 md:h-80 bg-cover bg-center relative flex items-center mt-16"
+          >
+            <div class="w-full">
+              <img
+                src="rode-assets/accessories-text-image.svg"
+                alt=""
+                class=""
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <hr class="h-0.5 bg-gray-300 mt-24" />
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-12 pb-12">
+      <div class="max-w-[1280px] mx-auto">
+        <div
+          class="grid grid-col-1 md:grid md:grid-cols-3 gap-0 xl:grid xl:grid-cols-5"
+        >
+          <img
+            src="rode-assets/RODE_logo_footer.svg"
+            alt=""
+            class="w-fit"
+          />
+          <div class="w-fit">
+            <h4 class="font-inter font-semibold">Products</h4>
+            <ul>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Microphones
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Headphones
+                </li>
+              </a>
+              <a href="" class="block w-fit">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Interfaces and Mixers
+                </li>
+              </a>
+              <a href="" class="block w-fit">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Accessories
+                </li>
+              </a>
+              <a href="" class="block w-fit">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Apps
+                </li>
+              </a>
+              <a href="" class="block w-fit">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Apparel
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="w-fit">
+            <h4 class="font-inter font-semibold">Service</h4>
+            <ul>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Support Centre
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Warranty
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Where to Buy
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Authorised Dealers
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="w-fit">
+            <h4 class="font-inter font-semibold">Company</h4>
+            <ul>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  About RØDE
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  News and Info
+                </li>
+              </a>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Career Opportunities
+                </li>
+              </a>
+            </ul>
+            <h4 class="font-inter font-semibold mt-2">Account</h4>
+            <ul>
+              <a href="" class="w-fit block">
+                <li
+                  class="font-inter opacity-90 hover:opacity-50 transition-all duration-200 mt-2 inline-block"
+                >
+                  Create Account
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col md:items-end w-fit sm:w-full"
+          >
+            <h2
+              class="font-inter font-semibold text-2xl sm:w-[330px] md:text-right"
+            >
+              Subscribe to our latest news and offers
+            </h2>
+            <a
+              href=""
+              class="w-fit mb-8 border-2 border-transparent font-inter text-white mt-6 bg-black rounded-full px-7 py-2 font-semibold hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-400 ease-linear"
+            >
+              <button>Subscribe</button>
+            </a>
+          </div>
+        </div>
+        <hr class="h-0.5 bg-gray-300 my-6" />
+        <!-- footer-bottom -->
+        <div
+          class="footer-bottom flex flex-col md:flex md:flex-row md:items-center justify-between"
+        >
+          <div>
+            <p class="font-inter text-xs">© 2024 RØDE All Rights Reserved.</p>
+          </div>
+          <div>
+            <p class="font-inter text-xs">
+              Privacy Policy | Terms & Conditions
+            </p>
+          </div>
+          <div
+            class="flex flex-col space-y-6 md:space-y-0 md:flex md:flex-row md:space-x-5 mt-4 md:mt-0"
+          >
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/facebook.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/twitter.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/instagram.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/youtube.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/tik-tok.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/twitch.png" alt="" class="w-[30px]" />
+            </a>
+            <a href="" class="inline-block w-fit">
+              <img src="rode-assets/discord.png" alt="" class="w-[30px]" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
